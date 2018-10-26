@@ -8,8 +8,8 @@ import tensorflow as tf
 from tensorflow.contrib import slim
 import numpy as np
 import cv2
-from ol.openpose import config
-from ol.openpose import getoutputs
+import config
+import getoutputs
 
 def ppad(input,padSize):
     padMat=np.array([[0,0],[padSize,padSize],[padSize,padSize],[0,0]])
